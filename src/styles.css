@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border: 1px solid gray;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.addlist {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  width: calc(100% - 50px);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+/* .no-outline:focus {
+  outline: none;
+} */
+
+input[type="button"] {
+  border: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: gray;
+}
+
+input[type="button"]:hover {
+  text-decoration: underline;
+}
+
+/* WE ARE GOING TO CREATE A LIST */
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid gray;
+  position: relative;
+  height: 40px;
+}
+
+.checkbox {
+  position: absolute;
+  left: 10px;
+}
+
+.todoDesc {
+  position: absolute;
+  left: 35px;
+  border: 0;
+}
+
+.threedots {
+  position: absolute;
+  right: 10px;
+}
+
+:focus {
+  outline: none;
+  background-color: rgb(223, 222, 172);
+}
