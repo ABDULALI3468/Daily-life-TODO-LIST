@@ -16,10 +16,6 @@
 - JavaScript ES6
 - Webpack
 
-## Live Demo (if available)
-
-[Live Demo Link](https://abdulali3468.github.io/Daily-life-TODO-LIST/)
-
 ### Getting Started
 
 To get a local copy up and running follow these simple steps:
