@@ -6,6 +6,7 @@ const clearCompletedBtn = document.querySelector('.completeButton');
 const listContainer = document.querySelector('#place');
 
 let todosArr = [];
+window.todosArr = todosArr;
 
 const updateIndex = (index) => {
   for (let i = index + 1; i < todosArr.length; i += 1) {
@@ -38,10 +39,13 @@ const render = () => {
   for (let i = 0; i < todosArr.length; i += 1) {
     updateCheckBox(i, false);
     const li = document.createElement('li');
+    li.draggable = true;
+    li.classList.add('card');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.className = 'checkbox';
     const inputDesc = document.createElement('input');
+    inputDesc.type = 'text';
     inputDesc.value = todosArr[i].description;
     inputDesc.className = 'todoDesc';
     inputDesc.readOnly = true;
@@ -106,7 +110,6 @@ todoInput.addEventListener('keyup', (e) => {
 });
 
 clearCompletedBtn.addEventListener('click', () => {
-  const todo = new Todo();
   const filtered = todosArr.filter((todo) => todo.completed !== true);
   todosArr = filtered;
   for (let i = 0; i < todosArr.length; i += 1) {
@@ -116,4 +119,20 @@ clearCompletedBtn.addEventListener('click', () => {
   render();
 });
 
+let cordArr = [];
+const getCord = () => {
+  cordArr = [];
+  const lis = document.querySelectorAll('.card .todoDesc');
+  lis.forEach((element) => {
+    const y_cord = element.getBoundingClientRect().y;
+    const obj = {
+      text: element.value,
+      cordY: y_cord,
+    };
+    cordArr.push(obj);
+  });
+  return cordArr;
+};
+
 export default render;
+export { cordArr, getCord };
