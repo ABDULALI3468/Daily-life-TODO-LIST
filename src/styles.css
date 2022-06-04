@@ -27,26 +27,38 @@ h1 {
   font-size: 20px;
 }
 
-.addlist {
+.addlist,
+.card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   border: 1px solid gray;
+  height: 60px;
+}
+
+.fa-plus,
+.threedots {
+  position: absolute;
+  right: 13px;
+  top: 21px;
+}
+
+.threedots {
+  padding-right: 5px;
 }
 
 input[type="text"] {
+  flex: 1 1 0;
   background-color: transparent;
   border: none;
-  width: calc(100% - 50px);
+  width: calc(100%);
 }
 
 input[type="text"]:focus {
   outline: none;
+  background-color: none;
 }
-
-/* .no-outline:focus {
-  outline: none;
-} */
 
 input[type="button"] {
   border: 1px solid gray;
@@ -73,7 +85,7 @@ li {
   padding: 10px;
   border: 1px solid gray;
   position: relative;
-  height: 40px;
+  height: 60px;
 }
 
 .checkbox {
@@ -85,11 +97,6 @@ li {
   position: absolute;
   left: 35px;
   border: 0;
-}
-
-.threedots {
-  position: absolute;
-  right: 10px;
 }
 
 :focus {
