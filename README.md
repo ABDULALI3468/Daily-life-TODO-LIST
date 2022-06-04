@@ -9,6 +9,7 @@
 
 [![Minimalist example](https://camo.githubusercontent.com/d04bee7a5b8f62cc6655dbec65c4d14583e4d78d0c434ddc070f6881bb9568fc/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f416355642d5f596a6a71672f302e6a7067)](https://www.youtube.com/watch?v=AcUd-_Yjjqg)
 
+[!Click to see the Live Version of this project](https://abdulali3468.github.io/Daily-life-TODO-LIST/)
 ## Built With
 
 - HTML
