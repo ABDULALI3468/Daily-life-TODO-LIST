@@ -103,3 +103,13 @@ li {
   outline: none;
   background-color: rgb(223, 222, 172);
 }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .main {
+    border: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
